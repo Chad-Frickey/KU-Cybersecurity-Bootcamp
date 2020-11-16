@@ -71,7 +71,7 @@ The playbook implements the following tasks:
 - Use systemctl to use more memory
 - Download and launch Docker container sebp/elk:761
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
 
 ![github-small](https://github.com/Chad-Frickey/KU-Cybersecurity-Bootcamp/blob/master/Images/ELK_Docker_ps-a.jpg)
 
@@ -103,4 +103,3 @@ SSH into the control node and follow the steps below:
 - To make Ansible run the playbook on a specific machine(s), update the /etc/ansible/hosts file. Within this file, name groups using square brackets (currently contains '[webservers]' and '[elk]') surrounding the group-name and under the group-name, replace private IP's with your own respective IP's. You then use these group-names behind the "hosts:" field in the playbooks to specify which machines to apply the playbook to.
 - To confirm the ELK-server is running go to http://[ELK-server-public-IP:5601]/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
